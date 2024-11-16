@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2196F3"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Alps' Hotel"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/frenchFlag"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/france_national_flag"
+            android:contentDescription="French Flag"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/iconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="User Icon"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Search a hotel name"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_below="@id/titleBar"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:background="@drawable/search_box_background" />
+
+    <!-- Список отелей -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hotelList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

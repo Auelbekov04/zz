@@ -1,0 +1,5 @@
+ad json - Project - main пкм new - Folder - Assets - new directory name cover - вставить фотки - а джонки в ассетс
+
+
+implementation ("com.google.android.material:material:1.9.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
